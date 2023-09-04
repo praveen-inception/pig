@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggy Face</title>
+    <style>
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtSFT0A48OVoGvLoCyvx4nG0suw_0DjDDFbFNLLojW0omMZ0qQlj7EVEgEDHdPj_BQzoA&usqp=CAU);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .piggy-face {
+            width: 300px;
+            height: 300px;
+            background-color: #ffc2c2; /* Light pink color for the face */
+            border-radius: 50%; /* Create a circular shape */
+            position: relative;
+        }
+        
+        .eyes {
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            width: 20px;
+            height: 20px;
+            background-color: #000000; /* Black color for the eyes */
+            border-radius: 50%; /* Create circular eyes */
+            transform: translateX(-50%);
+        }
+        
+        .nose {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: #000000; /* Same as the face color */
+            border-radius: 50%; /* Create a triangular nose */
+            transform: translate(-50%, -50%);
+        }
+        
+        .mouth {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            width: 60px;
+            height: 40px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border: 3px solid #000; /* Black border for the mouth */
+            transform: translateX(-50%);
+        }
+
+        /* Left ear */
+        .ear-left {
+            position: absolute;
+            top: 19%;
+            left: -50px;
+            width: 50px;
+            height: 80px;
+            background-color: #FFB6C1; /* Same as the face color */
+            border-top-left-radius: 100%;
+            transform: rotate(-60deg);
+        }
+        
+        /* Right ear */
+        .ear-right {
+            position: absolute;
+            top: 19%;
+            right: -50px;
+            width: 50px;
+            height: 80px;
+            background-color: #FFB6C1; /* Same as the face color */
+            border-top-right-radius: 100%;
+            transform: rotate(60deg);
+    </style>
+</head>
+<body>
+    <div class="piggy-face">
+        <div class="ear-left"></div>
+        <div class="ear-right"></div>
+        <div class="eyes"></div>
+        <div class="eyes" style="left: 75%;"></div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
